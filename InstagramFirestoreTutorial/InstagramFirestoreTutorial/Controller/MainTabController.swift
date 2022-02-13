@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainTabController.swift
 //  InstagramFirestoreTutorial
 //
 //  Created by Junho Lee on 2022/02/13.
@@ -7,14 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainTabController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        view.backgroundColor = .red
     }
-
-
 }
-
