@@ -14,6 +14,11 @@
 		EBE37F8A27B9023E005383BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE37F8927B9023E005383BA /* Assets.xcassets */; };
 		EBE37F8D27B9023E005383BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE37F8B27B9023E005383BA /* LaunchScreen.storyboard */; };
 		EBE37F9B27B902BB005383BA /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F9A27B902BB005383BA /* MainTabController.swift */; };
+		EBE37F9D27B90412005383BA /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F9C27B90412005383BA /* FeedController.swift */; };
+		EBE37F9F27B9041D005383BA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F9E27B9041D005383BA /* SearchController.swift */; };
+		EBE37FA127B9042A005383BA /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37FA027B9042A005383BA /* ImageSelectorController.swift */; };
+		EBE37FA327B90437005383BA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37FA227B90437005383BA /* NotificationController.swift */; };
+		EBE37FA527B9043E005383BA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37FA427B9043E005383BA /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		EBE37F8C27B9023E005383BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE37F8E27B9023E005383BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE37F9A27B902BB005383BA /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		EBE37F9C27B90412005383BA /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		EBE37F9E27B9041D005383BA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		EBE37FA027B9042A005383BA /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
+		EBE37FA227B90437005383BA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EBE37FA427B9043E005383BA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				EBE37F9A27B902BB005383BA /* MainTabController.swift */,
+				EBE37F9C27B90412005383BA /* FeedController.swift */,
+				EBE37F9E27B9041D005383BA /* SearchController.swift */,
+				EBE37FA027B9042A005383BA /* ImageSelectorController.swift */,
+				EBE37FA227B90437005383BA /* NotificationController.swift */,
+				EBE37FA427B9043E005383BA /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -190,7 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE37F8527B9023C005383BA /* ViewController.swift in Sources */,
+				EBE37F9F27B9041D005383BA /* SearchController.swift in Sources */,
+				EBE37FA327B90437005383BA /* NotificationController.swift in Sources */,
+				EBE37FA127B9042A005383BA /* ImageSelectorController.swift in Sources */,
 				EBE37F8127B9023C005383BA /* AppDelegate.swift in Sources */,
+				EBE37FA527B9043E005383BA /* ProfileController.swift in Sources */,
+				EBE37F9D27B90412005383BA /* FeedController.swift in Sources */,
 				EBE37F9B27B902BB005383BA /* MainTabController.swift in Sources */,
 				EBE37F8327B9023C005383BA /* SceneDelegate.swift in Sources */,
 			);
