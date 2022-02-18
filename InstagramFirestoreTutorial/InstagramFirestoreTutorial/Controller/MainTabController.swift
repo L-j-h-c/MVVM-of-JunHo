@@ -22,7 +22,8 @@ class MainTabController: UITabBarController {
         view.backgroundColor = .white
         
         // 뷰컨트롤러들의 인스턴스를 만든 것
-        let feed = templateNavigationController(unselectedImage: UIImage(named: "home_unselected"), selectedImage: UIImage(named: "home_selected"), rootViewController: FeedController())
+        let layout = UICollectionViewFlowLayout()
+        let feed = templateNavigationController(unselectedImage: UIImage(named: "home_unselected"), selectedImage: UIImage(named: "home_selected"), rootViewController: FeedController(collectionViewLayout: layout))
         
         let search = templateNavigationController(unselectedImage: UIImage(named: "search_unselected"), selectedImage: UIImage(named: "search_selected"), rootViewController: SearchController())
         
