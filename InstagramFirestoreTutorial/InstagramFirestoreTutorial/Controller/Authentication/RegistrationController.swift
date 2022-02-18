@@ -13,6 +13,15 @@ class RegistrationController: UIViewController {
     
     private var viewModel = RegistrationViewModel()
     
+    
+    private let plushPhotoButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(named: "plus_photo"), for: .normal)
+        button.tintColor = .white
+        button.addTarget(self, action: #selector(handleProfilePhotoSelect), for: .touchUpInside)
+        return button
+    }()
+    
     private let emailTextField: UITextField = {
         let tf = CustomTextField(placeholder: "Email")
         tf.keyboardType = .emailAddress
@@ -39,13 +48,6 @@ class RegistrationController: UIViewController {
         return button
     }()
     
-    private let plushPhotoButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setImage(UIImage(named: "plus_photo"), for: .normal)
-        button.tintColor = .white
-        return button
-    }()
-    
     private let alreadyHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
         button.attributedTitle(firstPart: "Already have an account?", secondPart: "Sign Up")
@@ -62,6 +64,8 @@ class RegistrationController: UIViewController {
         configureNotificationObservers()
     }
     
+    // MARK: - Action
+    
     @objc func handleShowSignUp() {
         navigationController?.popViewController(animated: true)
     }
@@ -77,9 +81,15 @@ class RegistrationController: UIViewController {
             viewModel.username = sender.text
         }
         
-        signUpButton.backgroundColor = viewModel.buttonBackGroundColor
-        signUpButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
-        signUpButton.isEnabled = viewModel.formIsValid
+        updateForm()
+    }
+    
+    @objc func handleProfilePhotoSelect() {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        present(picker, animated: true, completion: nil)
     }
     
     // MARK: - Helpers
@@ -117,5 +127,23 @@ extension RegistrationController: FormViewModel {
         signUpButton.backgroundColor = viewModel.buttonBackGroundColor
         signUpButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
         signUpButton.isEnabled = viewModel.formIsValid
+    }
+}
+
+// MARK: - UIIMagePickerControllerDelegate
+
+extension RegistrationController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        guard let selectedImage = info[.editedImage] as? UIImage else { return }
+        
+        plushPhotoButton.layer.cornerRadius = plushPhotoButton.frame.width / 2
+        plushPhotoButton.layer.masksToBounds = true
+        plushPhotoButton.layer.borderColor = UIColor.white.cgColor
+        plushPhotoButton.layer.borderWidth = 2
+        plushPhotoButton.setImage(selectedImage.withRenderingMode(.alwaysOriginal), for: .normal)
+        
+        self.dismiss(animated: true, completion: nil)
     }
 }
