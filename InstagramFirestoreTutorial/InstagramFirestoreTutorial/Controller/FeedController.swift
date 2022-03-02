@@ -37,6 +37,7 @@ class FeedController: UICollectionViewController {
     
     func configureUI() {
         collectionView.backgroundColor = .white
+        view.backgroundColor = .white
         
         collectionView.register(FeedCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         

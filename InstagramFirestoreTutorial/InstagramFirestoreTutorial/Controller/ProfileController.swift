@@ -18,8 +18,7 @@ class ProfileController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .systemPurple
+
         configureCollectionView()
     }
     
