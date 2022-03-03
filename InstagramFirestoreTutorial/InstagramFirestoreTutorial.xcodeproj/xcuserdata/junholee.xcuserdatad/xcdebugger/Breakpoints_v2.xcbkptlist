@@ -3,4 +3,69 @@
    uuid = "FCCC4691-9063-4F09-9A3C-E951F678C9D4"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13A4C240-80CA-49E3-8754-8295BC4F4328"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramFirestoreTutorial/Controller/Authentication/LoginController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "iconImage"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "13A4C240-80CA-49E3-8754-8295BC4F4328 - 3773f357ad71922d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIImageView in variable initialization expression of InstagramFirestoreTutorial.LoginController.iconImage : __C.UIImageView"
+                  moduleName = "InstagramFirestoreTutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/Architecture/MVVM/MVVM-forked/MVVM-of-JunHo/InstagramFirestoreTutorial/InstagramFirestoreTutorial/Controller/Authentication/LoginController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "13A4C240-80CA-49E3-8754-8295BC4F4328 - f3987237de9713d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramFirestoreTutorial.LoginController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; InstagramFirestoreTutorial.LoginController"
+                  moduleName = "InstagramFirestoreTutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/Architecture/MVVM/MVVM-forked/MVVM-of-JunHo/InstagramFirestoreTutorial/InstagramFirestoreTutorial/Controller/Authentication/LoginController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "230">
+               </Location>
+               <Location
+                  uuid = "13A4C240-80CA-49E3-8754-8295BC4F4328 - 2b003e24591fadda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InstagramFirestoreTutorial.LoginController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;InstagramFirestoreTutorial.LoginController&gt;"
+                  moduleName = "InstagramFirestoreTutorial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/Architecture/MVVM/MVVM-forked/MVVM-of-JunHo/InstagramFirestoreTutorial/InstagramFirestoreTutorial/Controller/Authentication/LoginController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "178">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
