@@ -19,6 +19,9 @@
 		EBC18D3A27BECA7400F33F59 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18D3927BECA7400F33F59 /* RegistrationController.swift */; };
 		EBC18D3C27BED2AD00F33F59 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18D3B27BED2AD00F33F59 /* CustomTextField.swift */; };
 		EBC18D3E27BF75A700F33F59 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18D3D27BF75A700F33F59 /* AuthenticationViewModel.swift */; };
+		EBD0D05827D7BA880007E5AF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0D05727D7BA880007E5AF /* UserService.swift */; };
+		EBD0D05A27D7BA990007E5AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0D05927D7BA990007E5AF /* Constants.swift */; };
+		EBD0D05C27D7BC750007E5AF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0D05B27D7BC750007E5AF /* User.swift */; };
 		EBE37F8127B9023C005383BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F8027B9023C005383BA /* AppDelegate.swift */; };
 		EBE37F8327B9023C005383BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F8227B9023C005383BA /* SceneDelegate.swift */; };
 		EBE37F8527B9023C005383BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F8427B9023C005383BA /* ViewController.swift */; };
@@ -48,6 +51,9 @@
 		EBC18D3927BECA7400F33F59 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		EBC18D3B27BED2AD00F33F59 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		EBC18D3D27BF75A700F33F59 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		EBD0D05727D7BA880007E5AF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EBD0D05927D7BA990007E5AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EBD0D05B27D7BC750007E5AF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EBE37F7D27B9023C005383BA /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE37F8027B9023C005383BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE37F8227B9023C005383BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				EB6425D527BC303A00D75827 /* Extensions.swift */,
+				EBD0D05927D7BA990007E5AF /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -115,6 +122,7 @@
 			children = (
 				EB01BC1327CDF30E00041A35 /* ImageUploader.swift */,
 				EB01BC1527CDFDB900041A35 /* AuthService.swift */,
+				EBD0D05727D7BA880007E5AF /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 		EB6425D227BC2F6000D75827 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EBD0D05B27D7BC750007E5AF /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,12 +341,15 @@
 				EBC18D3E27BF75A700F33F59 /* AuthenticationViewModel.swift in Sources */,
 				EBE37FA127B9042A005383BA /* ImageSelectorController.swift in Sources */,
 				EBE37F8127B9023C005383BA /* AppDelegate.swift in Sources */,
+				EBD0D05C27D7BC750007E5AF /* User.swift in Sources */,
 				EBE37FA527B9043E005383BA /* ProfileController.swift in Sources */,
+				EBD0D05A27D7BA990007E5AF /* Constants.swift in Sources */,
 				EBE37F9D27B90412005383BA /* FeedController.swift in Sources */,
 				EBE37F9B27B902BB005383BA /* MainTabController.swift in Sources */,
 				EB6425D627BC303A00D75827 /* Extensions.swift in Sources */,
 				EB01BC1427CDF30E00041A35 /* ImageUploader.swift in Sources */,
 				EB01BC1627CDFDB900041A35 /* AuthService.swift in Sources */,
+				EBD0D05827D7BA880007E5AF /* UserService.swift in Sources */,
 				EB01BC1827CE27C700041A35 /* ProfileCell.swift in Sources */,
 				EBE37F8327B9023C005383BA /* SceneDelegate.swift in Sources */,
 				EBC18D3A27BECA7400F33F59 /* RegistrationController.swift in Sources */,
