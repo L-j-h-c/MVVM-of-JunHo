@@ -24,6 +24,7 @@
 		EBD0D05C27D7BC750007E5AF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0D05B27D7BC750007E5AF /* User.swift */; };
 		EBD0D05E27D7CF0D0007E5AF /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0D05D27D7CF0D0007E5AF /* ProfileHeaderViewModel.swift */; };
 		EBD0D06027D880D70007E5AF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0D05F27D880D70007E5AF /* UserCell.swift */; };
+		EBD0D06227D88EE10007E5AF /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0D06127D88EE10007E5AF /* UserCellViewModel.swift */; };
 		EBE37F8127B9023C005383BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F8027B9023C005383BA /* AppDelegate.swift */; };
 		EBE37F8327B9023C005383BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F8227B9023C005383BA /* SceneDelegate.swift */; };
 		EBE37F8527B9023C005383BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE37F8427B9023C005383BA /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		EBD0D05B27D7BC750007E5AF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EBD0D05D27D7CF0D0007E5AF /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		EBD0D05F27D880D70007E5AF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		EBD0D06127D88EE10007E5AF /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		EBE37F7D27B9023C005383BA /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE37F8027B9023C005383BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE37F8227B9023C005383BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				EBC18D3D27BF75A700F33F59 /* AuthenticationViewModel.swift */,
 				EBD0D05D27D7CF0D0007E5AF /* ProfileHeaderViewModel.swift */,
+				EBD0D06127D88EE10007E5AF /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				EBD0D05E27D7CF0D0007E5AF /* ProfileHeaderViewModel.swift in Sources */,
 				EBD0D05A27D7BA990007E5AF /* Constants.swift in Sources */,
 				EBE37F9D27B90412005383BA /* FeedController.swift in Sources */,
+				EBD0D06227D88EE10007E5AF /* UserCellViewModel.swift in Sources */,
 				EBE37F9B27B902BB005383BA /* MainTabController.swift in Sources */,
 				EB6425D627BC303A00D75827 /* Extensions.swift in Sources */,
 				EB01BC1427CDF30E00041A35 /* ImageUploader.swift in Sources */,
