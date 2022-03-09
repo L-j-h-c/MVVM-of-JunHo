@@ -6,6 +6,7 @@
 //
 
 import Firebase
+import UIKit
 
 struct UserService {
     static func fetchUser(completion: @escaping(User) -> Void) {
@@ -14,6 +15,15 @@ struct UserService {
             guard let dictionary = snapshot?.data() else { return }
             let user = User(dictionary: dictionary)
             completion(user)
+        }
+    }
+    
+    static func fetchUsers(competion: @escaping([User]) -> Void) {
+        COLLECTION_USERS.getDocuments { (snapshot, error) in
+            guard let snapshot = snapshot else { return }
+           
+            let users = snapshot.documents.map({ User(dictionary: $0.data()) })
+            competion(users)
         }
     }
 }
