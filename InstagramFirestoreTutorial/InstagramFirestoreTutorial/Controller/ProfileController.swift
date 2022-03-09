@@ -31,6 +31,7 @@ class ProfileController: UICollectionViewController {
         super.viewDidLoad()
 
         configureCollectionView()
+        checkIfUserIsFollowed()
     }
     
     // MARK: - API
@@ -44,6 +45,13 @@ class ProfileController: UICollectionViewController {
         collectionView.register(ProfileHeader.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: headerIdentifier)
+    }
+    
+    func checkIfUserIsFollowed() {
+        UserService.checkIfUserIsFollowed(uid: user.uid) { isFollowed in
+            self.user.isFollowed = isFollowed
+            self.collectionView.reloadData()
+        }
     }
 }
 
